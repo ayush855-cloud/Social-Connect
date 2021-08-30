@@ -255,7 +255,7 @@
 @media (max-width:768px){
     .message{
         position: fixed;
-    height: calc(163vh - 601px);
+    height: calc(114vh - 280px);
     top: 5.5rem;
     }
   
