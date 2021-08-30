@@ -15,6 +15,8 @@ function Followers({users,setShowFollowers}) {
        
         <div className="follow_box">
         <h5 style={{color:'rgb(17, 87, 114)',fontWeight:'700'}}>Followers</h5>
+        <hr/>
+        <div className="follow_content">
         {
             
             
@@ -25,6 +27,7 @@ function Followers({users,setShowFollowers}) {
            
             
         }
+        </div>
         <Switch
                 className="switch"
                 color="primary"

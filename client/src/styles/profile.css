@@ -25,6 +25,7 @@
     background: white;
     border: 1px solid rgba(255, 255, 255, 0.125);
 }
+
 .user__avatar{
     position: relative;
     top: -2rem;
@@ -183,7 +184,7 @@ h6{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: scroll;
+    
 }
 .follow_box{
     box-shadow: rgba(0,0,0,0.19) 0px 10px 20px ,rgba(0,0,0,0.23) 0px 6px 6px;
@@ -287,8 +288,10 @@ h6{
 @media (max-width:550px){
     .follow_box{
         
-        width: 96%;
+        width: 100%;
         position: fixed;
+        top: 16rem;
+        height: 433px;
     }
     .profile{
         margin-top: 7.2rem;
@@ -348,6 +351,9 @@ h6{
 }
 .fullname{
     font-size: 0.9rem;
+}
+.info_new{
+    position: fixed !important;
 }
 @media (min-width:551px) and (max-width:780px){
     .profile {

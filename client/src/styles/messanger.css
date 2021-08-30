@@ -255,7 +255,7 @@
 @media (max-width:768px){
     .message{
         position: fixed;
-    height: calc(114vh - 280px);
+    height: calc(186vh - 125px);
     top: 5.5rem;
     }
   
@@ -279,13 +279,13 @@
     .chat_input{
         width: -webkit-fill-available;
         position: fixed;
-    bottom: 3.3rem;
+    bottom: 2rem;
     background: #eee
     }
     .username{
         font-size: 0.97rem !important;
     }
     .chat_container{
-        height: calc(106% - 125px) !important;
+        height: calc(119% - 76px) !important;
     }
 }

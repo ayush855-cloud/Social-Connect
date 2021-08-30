@@ -12,7 +12,7 @@ import { MODAL } from '../redux/type/globalType';
 
 function Info({auth,dispatch,profile,id}) {
     
-    const { theme } = useSelector(state => state);
+    const { theme,modal,status } = useSelector(state => state);
     
     const [showFollowers, setShowFollowers] = useState(false);
     const [showFollowing, setShowFollowing] = useState(false);
@@ -40,7 +40,7 @@ function Info({auth,dispatch,profile,id}) {
         }
     },[showFollowers,dispatch,showFollowing,onEdit])
     return (
-        <div className="info">
+        <div className={`info ${(status || modal) && "info_new"}`}>
             {
                 userData?.map((user) => (
                     <div className="info_container" key={user._id}>
