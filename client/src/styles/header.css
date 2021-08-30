@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+.avatar{
+    height:3rem !important;
+    width:3rem !important;
+    margin-left: 1rem;
+    border-radius: 50%;
+    border: none;
+}
+.header{
+    position: sticky !important;
+    border-radius: 9px;
+}
+.avatar:focus{
+    border: none !important;
+}
+.avatar:hover{
+    border: none !important;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+.heading{
+    font-family: 'Roboto', sans-serif;
+}
+.MuiAvatar-img {
+    position: relative !important;
+    top: 0.4rem !important;
+    color: transparent !important;
+    width: 60% !important;
+    height: 60% !important;
+    object-fit: cover !important;
+}
+
+.notification{
+    top: 50px !important;
+    left: -40px !important;
+   
+}
+.notifications{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+.notification_details{
+   max-width: 180px !important;
+}
+.notification_avatar{
+    width: 70px !important;
+    height: 70px !important;
+    object-fit: cover;
+}
+.notify_username{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.notify-text{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+ .loading{
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    width: 15px;
+    height: 15px;
+    transform: translateY(-50%);
+}
+
+
+@media (max-width:768px){
+    .header{
+        position: fixed !important;
+       
+    }
+    .menu_item{
+        display: none !important;
+    }
+    .avatar_profile{
+        position: relative;
+        top: 0.2rem;
+    }
+    .header .menu{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background: white;
+        box-shadow: 0px 10px 30px rgb(0,0,0,0.7);
+        height: 9vh;
+    }
+    .header .menu .navbar-nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .header .menu .dropdown-menu{
+        bottom: 100%;
+        top: auto;
+        
+    }
+    .MuiPopover-paper{
+        position: relative !important;
+        left: 200px !important;
+        /* top: 150px !important; */
+    }
+   
+.MuiBadge-root{
+    top: 0.3rem !important;
+}
+.header .search__form{
+    width: 100%;
+    margin-top: 0.5rem;
+}
+.header .logo{
+    width: 100%;
+    text-align: center;
+    padding-top: 0.5rem;
+    z-index: 3;
+}
+.header .navbar{
+    width: 100%;
+    position: relative;
+    top: -1rem;
+    
+}
+
+    
+
+}

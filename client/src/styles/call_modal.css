@@ -1,0 +1,114 @@
+.call_modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #0008;
+    z-index: 9;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.call_box{
+    width: 100%;
+    max-width: 400px;
+    background: rgb(50, 61, 71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 50px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(0,0,0,0.4);
+
+}
+.call_box h4,.call_box h6{
+    margin-top: 5px;
+}
+.call_menu{
+    min-width: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.call_menu span{
+    font-size: 2rem;
+    padding: 10px 20px;
+    background: #eee;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+.call_menu span .call_icon{
+   color: red !important;
+   font-size: 1.8rem !important;
+}
+.call_menu span .call_icons{
+    color: forestgreen !important;
+    font-size: 1.8rem !important;
+}
+.call_modal .timer{
+    transform: translateY(-15px);
+}
+.show_video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+}
+.show_video .other_video{
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 6rem;
+}
+.show_video .you_video{
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    width: 300px;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid crimson;
+    z-index: 10;
+    
+}
+.show_video > span{
+    color: crimson;
+}
+.show_video span .end_call{
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: initial;
+  font-size: 4rem;
+  background: #eee;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  
+ 
+}
+.time_video{
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    color:white;
+}
+@media (max-width:760px){
+    .call_modal{
+        height: 106vh;
+    }
+    .show_video .other_video{
+        position: relative;
+        top: 14rem;  
+    }
+    
+}
