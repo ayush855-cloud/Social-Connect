@@ -197,7 +197,7 @@ function RightSide() {
                 {
                     user.length !== 0 &&
                     <RightCard user={user} >
-                      <div>
+                      <div className="messenger_icons">
                         <i className="fas fa-phone-alt" 
                             onClick={handleAudioCall}
                         />

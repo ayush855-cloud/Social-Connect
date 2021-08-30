@@ -8,9 +8,11 @@ import '../styles/home.css';
 
 // npm i socket.io when outside client
 // npm i socket.io-client  inside client
-function Home() {
+function Home(props) {
     const {homePosts}=useSelector(state=>state);
     return (
+        <>
+        {props.header}
         <div className="home row mx-8">
             <div className="col-md-8">
                 <Status />
@@ -25,6 +27,7 @@ function Home() {
              <RightSidebar/>
             </div>
         </div>
+        </>
     )
 }
 

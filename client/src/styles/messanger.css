@@ -252,11 +252,28 @@
 .set_images{
     width: 50% !important;
 }
+.exit_icon{
+    color: white !important;
+    font-size: 1.8rem !important;
+}
+.arrow_exist{
+    display: none !important;
+}
 @media (max-width:768px){
     .message{
         position: fixed;
-    height: calc(193vh - 125px);
+    height: calc(187vh - 125px);
     top: 5.5rem;
+    width: 100.5%;
+    }
+    .messenger_icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -1.3rem;
+    }
+    .arrow_exist{
+        display: block !important;
     }
   
     .set_images{
@@ -279,13 +296,17 @@
     .chat_input{
         width: -webkit-fill-available;
         position: fixed;
-    bottom: 2rem;
+    bottom: 0rem;
     background: #eee
     }
     .username{
         font-size: 0.97rem !important;
     }
     .chat_container{
-        height: calc(41% - 76px) !important;
+        height: calc(55% - 76px) !important;
+    }
+    .message{
+        z-index: 101;
+        margin-top: -91px;
     }
 }

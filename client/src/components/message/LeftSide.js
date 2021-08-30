@@ -6,10 +6,11 @@ import MessageSearchCard from '../MessageSearchCard';
 import {useHistory} from 'react-router-dom';
 import { ADD_USER, CHECK_ONLINE_OFFLINE } from '../../redux/actions/messageAction';
 import { Avatar } from '@material-ui/core';
-import MoreVertOutlinedIcon from '@material-ui/icons/MoreVertOutlined';
+
 import SearchIcon from '@material-ui/icons/Search';
 import {useParams} from 'react-router-dom';
 import {getConversations} from '../../redux/actions/messageAction';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
 
 
@@ -46,6 +47,9 @@ function LeftSide() {
         dispatch({type:ADD_USER,payload:{...user,text:'',media:[]}});
         
         return history.push(`/message/${user._id}`);
+    }
+    const handleExist=()=>{
+        return history.push("/");
     }
 
     const isActive=(user)=>{
@@ -90,7 +94,7 @@ function LeftSide() {
         <div style={{height:'75px',borderBottom:'1px solid lightgrey',display:'flex',justifyContent:'space-between',alignItems:'center',filter:theme?'invert(1)':'invert(0)'}} className="left-header">
         <Avatar src={auth.user.avatar} className="user_avatar" 
             />
-        <MoreVertOutlinedIcon />
+        <ExitToAppIcon className="exit_icon mr-3" onClick={handleExist}/>
         
         </div>
         <form className="message_searcher" onSubmit={handleSubmit}>

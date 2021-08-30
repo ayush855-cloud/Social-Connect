@@ -1,16 +1,23 @@
 import { Avatar } from '@material-ui/core';
 import React from 'react';
-
+import { useHistory } from 'react-router-dom';
 import '../styles/profile.css';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 
 function RightCard({user,children}) {
-  
+    const history=useHistory();
+    const handleMessage=()=>{
+        return history.push("/message");
+    }
+    
 
     return (
     <div className={`d-flex align-items-center justify-content-between right_message w-100 px-2`}>
-            <div className="d-flex align-items-center">
-            <Avatar src={user.avatar} size="big-avatar" className="avatar_style" />
+    <ArrowBackIcon className="arrow_exist" onClick={handleMessage}/>
+            <div className="d-flex align-items-center ml-3">
+            
+            <Avatar src={user.avatar}  className="avatar_style" />
 
             
             <div className="d-flex flex-column mr-4 shift_details_user" >
@@ -24,6 +31,7 @@ function RightCard({user,children}) {
             
             </div>
             {children}
+           
 </div>
     )
 }

@@ -19,11 +19,6 @@ import SocketClient from './SocketClient';
 import { getNotifies } from './redux/actions/notifyActions';
 import CallModal from './components/CallModal';
 import Peer from 'peerjs';
-import Message from './pages/message';
-import MessagePersonalChat from './pages/message/[id]';
-import SocialPost from './pages/post/[id]';
-import SocialProfile from './pages/profile/[id]';
-import Discover from './pages/discover';
 
 
 function App() {
@@ -72,7 +67,7 @@ function App() {
         <input type="checkbox" id="theme" />
         <div className={`App ${(status|| modal) && 'mode'}`}>
           <div className="main">
-          {auth.token && <Header/>}
+            {auth.token && <Header/>}
             {status && <StatusModal/>}
             {auth.token && <SocketClient/>}
             {call && <CallModal/>}
@@ -83,28 +78,11 @@ function App() {
               <Register/>
             </Route>
             
-            <PrivateRouter exact path="/message">
-           
-            <Message/>
-            </PrivateRouter>
-            <PrivateRouter exact path="/discover">
+            <PrivateRouter exact path="/:page" component={PageRender} />
+            
           
-            <Discover/>
-            </PrivateRouter>
-            
-            <PrivateRouter exact path="/post/:id" >
-           
-              <SocialPost/>
-              </PrivateRouter>
               
-              <PrivateRouter exact path="/profile/:id" >
-            
-              <SocialProfile/>
-              </PrivateRouter>
-              <PrivateRouter exact path="/message/:id" >
-              
-              <MessagePersonalChat/>
-              </PrivateRouter>
+              <PrivateRouter exact path="/:page/:id" component={PageRender} />
            
               
           </div>

@@ -95,6 +95,10 @@
     color: teal;
     cursor: pointer;
 }
+.posts .card .card_header > .MuiSvgIcon-root{
+    position: relative !important;
+    top: -1rem !important;
+}
 
 .posts .card_icon_menu{
     display: flex;
