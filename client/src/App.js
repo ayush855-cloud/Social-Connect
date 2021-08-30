@@ -20,6 +20,7 @@ import { getNotifies } from './redux/actions/notifyActions';
 import CallModal from './components/CallModal';
 import Peer from 'peerjs';
 
+
 function App() {
   const {auth,status,modal,call}=useSelector((state)=>state);
   const dispatch=useDispatch();
@@ -78,9 +79,11 @@ function App() {
             </Route>
             
             <PrivateRouter exact path="/:page" component={PageRender} />
+            
+          
               
               <PrivateRouter exact path="/:page/:id" component={PageRender} />
-            
+           
               
           </div>
 
