@@ -16,10 +16,14 @@ function Followers({users,setShowFollowers}) {
         <div className="follow_box">
         <h5 style={{color:'rgb(17, 87, 114)',fontWeight:'700'}}>Followers</h5>
         {
+            
+            
             users.map(user=>(
                 <UserCard key={user._id} user={user} setShowFollowers={setShowFollowers}>
                 </UserCard>
             ))
+           
+            
         }
         <Switch
                 className="switch"
