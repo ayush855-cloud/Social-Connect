@@ -258,6 +258,7 @@
     height: calc(163vh - 601px);
     top: 5.5rem;
     }
+  
     .set_images{
         width: 100% !important;
     }
@@ -285,6 +286,6 @@
         font-size: 0.97rem !important;
     }
     .chat_container{
-        height: calc(200% - 125px) !important;
+        height: calc(106% - 125px) !important;
     }
 }
