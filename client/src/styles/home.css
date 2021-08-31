@@ -183,14 +183,11 @@
         padding-bottom: 28px !important;
         text-align: center;
     }
-    .card_body-content span {
-        
+    .card_body-content span {  
         position: relative;
         left: -0.4rem;
-        display: block;
-        
+        display: block;    
     }
-
     .icons_div{
         width: 35%;
     }
