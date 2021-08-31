@@ -18,16 +18,16 @@ function UserCard({user,border,handleBoxClose,setShowFollowers,setShowFollowing}
 
             <div className="d-flex flex-column position-fixed" style={{left:'5rem',color:'black'}}>
                 <span className="d-block" style={{fontWeight:'600'}}> {
-                    user.username?.length<10 ? user.username:
-                    user.username?.slice(0,10)+'...'
+                    user.username?.length<16 ? user.username:
+                    user.username?.slice(0,15)+'...'
                 }</span>
                 
                 <span style={{opacity: 0.7}}>
                    
                         
                 {
-                    user.fullname?.length<10 ? user.fullname:
-                    user.fullname?.slice(0,10)+'...'
+                    user.fullname?.length<15 ? user.fullname:
+                    user.fullname?.slice(0,14)+'...'
                 }
                         
                     

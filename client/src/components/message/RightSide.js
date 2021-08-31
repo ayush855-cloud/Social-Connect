@@ -219,7 +219,7 @@ function RightSide() {
                     {
                         data.map((msg, index) => (
 
-                            <div key={index}>
+                            <div key={index} className="msg_display_space">
                                 {
                                     msg.sender !== auth.user._id &&
                                     <div className="chat_row other_message">

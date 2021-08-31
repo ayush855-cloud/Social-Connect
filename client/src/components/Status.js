@@ -12,7 +12,7 @@ function Status() {
     return (
         <div className="status my-3 d-flex">
             <Avatar src={auth.user.avatar} className="status_avatar" style={{filter: theme ? 'invert(1)' : 'invert(0)'}}/>
-            <button className="statusBtn flex-fill" onClick={()=>dispatch({type:STATUS,payload:true})} style={{filter: theme ? 'invert(1)' : 'invert(0)'}}>
+            <button className="statusBtn" onClick={()=>dispatch({type:STATUS,payload:true})} style={{filter: theme ? 'invert(1)' : 'invert(0)'}}>
                 {auth.user.username},what are you thinking?
             </button>
         </div>

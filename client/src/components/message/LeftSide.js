@@ -6,7 +6,7 @@ import MessageSearchCard from '../MessageSearchCard';
 import {useHistory} from 'react-router-dom';
 import { ADD_USER, CHECK_ONLINE_OFFLINE } from '../../redux/actions/messageAction';
 import { Avatar } from '@material-ui/core';
-
+import {Link} from 'react-router-dom';
 import SearchIcon from '@material-ui/icons/Search';
 import {useParams} from 'react-router-dom';
 import {getConversations} from '../../redux/actions/messageAction';
@@ -92,8 +92,9 @@ function LeftSide() {
         <>
        
         <div style={{height:'75px',borderBottom:'1px solid lightgrey',display:'flex',justifyContent:'space-between',alignItems:'center',filter:theme?'invert(1)':'invert(0)'}} className="left-header">
-        <Avatar src={auth.user.avatar} className="user_avatar" 
-            />
+        <Link to={`/profile/${auth.user._id}`}><Avatar src={auth.user.avatar} className="user_avatar"/>
+         </Link>
+            
         <ExitToAppIcon className="exit_icon mr-3" onClick={handleExist}/>
         
         </div>

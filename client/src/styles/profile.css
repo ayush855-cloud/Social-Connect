@@ -290,11 +290,11 @@ h6{
         
         width: 100%;
         position: fixed;
-        top: 22rem;
+        top: 20rem;
         height: 107vh;
     }
     .profile{
-        margin-top: 7.2rem;
+        margin-top: 6.65rem;
         overflow: scroll !important;
     }
     .info{
@@ -302,8 +302,14 @@ h6{
         height: 90vh;
         border-radius: 0px ;
     }
+    .info__content__title{
+        margin-bottom: 3.5rem;
+    }
     .info__content__title h2 {
         margin-right: 3rem;
+        font-size: 1.6rem !important;
+        font-weight: 500;
+       
     }
     .info__content{
         top: -3rem;
@@ -356,6 +362,10 @@ h6{
 
 .info{
     height:auto;
+}
+.info__content .info__content__title> .btn-outline-info{
+    position: absolute;
+    left: 0.2rem;
 }
 @media (min-width:551px) and (max-width:780px){
     .profile {
