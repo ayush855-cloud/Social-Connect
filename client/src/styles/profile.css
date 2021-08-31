@@ -303,7 +303,10 @@ h6{
         border-radius: 0px ;
     }
     .info__content__title{
-        margin-bottom: 3.5rem;
+        /* margin-bottom: 3.5rem; */
+        width: 100%;
+        margin: auto;
+        text-align: center;
     }
     .info__content__title h2 {
         margin-right: 3rem;
@@ -365,7 +368,11 @@ h6{
 }
 .info__content .info__content__title> .btn-outline-info{
     position: absolute;
-    left: 0.2rem;
+    left: 5rem;
+    
+}
+.info_container .follow_btn{
+    margin-top: 4rem;
 }
 @media (min-width:551px) and (max-width:780px){
     .profile {

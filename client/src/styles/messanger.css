@@ -59,7 +59,9 @@
     left: -0.2rem ;
    
 }
-.user_avatar{
+.left-header .user_avatar{
+    position: relative;
+    top: 0.1rem;
     width: 75px !important;
     height: 75px !important;
 }
@@ -261,12 +263,20 @@
 .arrow_exist{
     display: none !important;
 }
+.d-flex .avatar_style{
+    position: relative !important;
+    top: 0rem !important;
+}
 @media (max-width:768px){
     .message{
         position: fixed;
     height: 163vh;
     top: 5.5rem;
     width: 100.5%;
+    }
+    .d-flex .avatar_style{
+        position: relative !important;
+        top: -0.1rem !important;
     }
     .messenger_icons{
         display: flex;
@@ -309,7 +319,7 @@
         font-size: 0.97rem !important;
     }
     .chat_container{
-        height: calc(61% - 114px) !important;
+        height: calc(61% - 140px) !important;
     }
     .message{
         z-index: 101;
@@ -330,4 +340,5 @@
     .msg_display_space:last-child{
         margin-bottom: 2.1rem !important;
     }
+    
 }

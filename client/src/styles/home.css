@@ -172,16 +172,16 @@
     .status_avatar{
     position: relative !important;
     top: -0.5rem !important;    
-    width: 84px !important;
-    height: 84px !important;
+    width: 90px !important;
+    height: 90px !important;
     }
     .status .statusBtn{
         position: relative;
         top: -0.6rem;
         height: 10vh;
-        padding: 8px;
-        
-      
+        padding-bottom: 20px;
+        padding-left:5px ;
+        text-align: center;
     }
     .card_body-content span {
         
@@ -228,6 +228,6 @@
     }
     .load_button{
         position: relative !important;
-    top: -4rem !important;
+    top: -4.8rem !important;
     }
 }
