@@ -254,7 +254,9 @@
 }
 .exit_icon{
     color: white !important;
-    font-size: 1.8rem !important;
+    font-size: 2.5rem !important;
+    position: relative;
+    top: 0.3rem;
 }
 .arrow_exist{
     display: none !important;
@@ -262,7 +264,7 @@
 @media (max-width:768px){
     .message{
         position: fixed;
-    height: calc(187vh - 125px);
+    height: calc(179vh - 125px);
     top: 5.5rem;
     width: 100.5%;
     }
@@ -297,16 +299,22 @@
         width: -webkit-fill-available;
         position: fixed;
     bottom: 0rem;
-    background: #eee
+    background: #eee;
+    height: 9vh;
     }
     .username{
         font-size: 0.97rem !important;
     }
     .chat_container{
-        height: calc(55% - 76px) !important;
+        height: calc(58% - 76px) !important;
     }
     .message{
         z-index: 101;
         margin-top: -91px;
+    }
+    .left-header{
+        width: 101%;
+        position: relative;
+        left: -0.05rem;
     }
 }

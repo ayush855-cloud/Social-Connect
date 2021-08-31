@@ -106,6 +106,9 @@ img{
         left: 200px !important;
         /* top: 150px !important; */
     }
+    .MuiAvatar-img{
+        top: 0.4rem !important;
+    }
    
 .MuiBadge-root{
     top: 0.3rem !important;

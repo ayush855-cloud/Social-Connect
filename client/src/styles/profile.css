@@ -290,8 +290,8 @@ h6{
         
         width: 100%;
         position: fixed;
-        top: 14rem;
-        height: 433px;
+        top: 17rem;
+        height: 577px;
     }
     .profile{
         margin-top: 7.2rem;
@@ -300,6 +300,7 @@ h6{
     .info{
         padding: 0px 10px;
         height: 90vh;
+        border-radius: 0px ;
     }
     .info__content__title h2 {
         margin-right: 3rem;
@@ -354,6 +355,9 @@ h6{
 }
 .info_new{
     position: fixed !important;
+}
+.info{
+    height:auto;
 }
 @media (min-width:551px) and (max-width:780px){
     .profile {

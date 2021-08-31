@@ -145,17 +145,17 @@
 @media (max-width:760px){
     .home{
         position: relative;
-        top: 7rem;
-        left: 1rem;
+        top: 6.5rem;
+        
     }
     
    .single_post{
        position: relative;
-       top: 7rem;
-       left: 0.3rem;
+       top: 6rem;
+       
        width: 100%;
        margin: auto;
-       height: calc(114vh - 100px);
+       height: calc(107vh - 100px);
        overflow-y: scroll;
        overflow-x: hidden !important;
    }
