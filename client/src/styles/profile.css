@@ -293,6 +293,9 @@ h6{
     
     
 }
+.info__content__title h2{
+    margin-bottom: 1rem !important;
+}
 @media (max-width:550px){
     .follow_box{
         
@@ -310,17 +313,16 @@ h6{
         height: 90vh;
         border-radius: 0px ;
     }
-    .info__content__title{
-        /* margin-bottom: 3.5rem; */
-        width: 100%;
-        margin: auto;
-        text-align: center;
-    }
+    
     .info__content__title h2 {
         margin-right: 3rem;
+        
         font-size: 1.6rem !important;
         font-weight: 500;
        
+    }
+    .info__content__title{
+        display: block !important;
     }
     .info__content{
         top: -3rem;

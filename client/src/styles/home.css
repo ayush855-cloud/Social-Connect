@@ -180,6 +180,7 @@
         top: -0.6rem;
         height: 10vh;
         padding: 8px;
+        padding-bottom: 28px !important;
         text-align: center;
     }
     .card_body-content span {
@@ -227,6 +228,6 @@
     }
     .load_button{
         position: relative !important;
-    top: -4.8rem !important;
+    top: -4rem !important;
     }
 }
