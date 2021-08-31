@@ -25,9 +25,7 @@ img{
     font-family: 'Roboto', sans-serif;
 }
 .MuiAvatar-img {
-    position: relative !important;
-    top: 0.4rem !important;
-    color: transparent !important;
+    
     width: 60% !important;
     height: 60% !important;
     object-fit: cover !important;

@@ -27,7 +27,7 @@
 .status_avatar{
     position: relative;
     left: -1.3rem;
-    top: -1.55rem !important;
+    top: -1.3rem !important;
     width: 100px !important;
     height: 100px !important;
 }
@@ -142,6 +142,10 @@
     color: rgb(8, 94, 94);
     font-weight: 500;
 }
+.card_header_username .post_avatar{
+    position: relative !important;
+    top: -0.8rem !important;
+}
 @media (max-width:760px){
     .home{
         position: relative;
@@ -166,7 +170,8 @@
        margin: 12px -5px;
    }
     .status_avatar{
-        
+    position: relative !important;
+    top: -0.5rem !important;    
     width: 84px !important;
     height: 84px !important;
     }
@@ -174,6 +179,8 @@
         position: relative;
         top: -0.6rem;
         height: 10vh;
+        padding: 8px;
+        
       
     }
     .card_body-content span {
@@ -209,7 +216,11 @@
         margin-bottom: 7rem !important;
     }
     .status{
+        height: 20vh;
+        justify-content: center;
+        align-items: center;
         border: 1px solid rgb(196, 187, 187);
+        padding-left: 10px;
     }
     .card_header_username{
         position: relative;
