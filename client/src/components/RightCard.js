@@ -14,8 +14,9 @@ function RightCard({user,children}) {
 
     return (
     <div className={`d-flex align-items-center justify-content-between right_message w-100 px-2`}>
+    <div className="d-flex justify-content-center align-items-center">
     <ArrowBackIcon className="arrow_exist" onClick={handleMessage}/>
-            <div className="d-flex align-items-center ml-3">
+            <div className="d-flex align-items-center ml-2">
             
             <Avatar src={user.avatar}  className="avatar_style" />
 
@@ -30,6 +31,8 @@ function RightCard({user,children}) {
             </div>
             
             </div>
+    </div>
+   
             {children}
            
 </div>

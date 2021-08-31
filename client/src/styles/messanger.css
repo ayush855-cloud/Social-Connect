@@ -264,7 +264,7 @@
 @media (max-width:768px){
     .message{
         position: fixed;
-    height: calc(179vh - 125px);
+    height: 163vh;
     top: 5.5rem;
     width: 100.5%;
     }
@@ -276,6 +276,9 @@
     }
     .arrow_exist{
         display: block !important;
+        position: relative;
+        top: -0.3rem;
+        font-size: 1.6rem !important;
     }
   
     .set_images{
@@ -300,13 +303,13 @@
         position: fixed;
     bottom: 0rem;
     background: #eee;
-    height: 9vh;
+    height: 55px;
     }
     .username{
         font-size: 0.97rem !important;
     }
     .chat_container{
-        height: calc(58% - 76px) !important;
+        height: calc(61% - 114px) !important;
     }
     .message{
         z-index: 101;
@@ -316,5 +319,15 @@
         width: 101%;
         position: relative;
         left: -0.05rem;
+    }
+    .chat_input input{
+        padding: 16px 15px;
+        height: fit-content;
+    }
+    .file_upload{
+        font-size: 1.2rem;
+    }
+    .chat_row:nth-last-child(1){
+        margin-bottom: 1rem;
     }
 }

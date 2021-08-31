@@ -290,8 +290,8 @@ h6{
         
         width: 100%;
         position: fixed;
-        top: 17rem;
-        height: 577px;
+        top: 22rem;
+        height: 107vh;
     }
     .profile{
         margin-top: 7.2rem;
@@ -353,9 +353,7 @@ h6{
 .fullname{
     font-size: 0.9rem;
 }
-.info_new{
-    position: fixed !important;
-}
+
 .info{
     height:auto;
 }
