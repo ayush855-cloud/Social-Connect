@@ -142,6 +142,7 @@ h6{
     display: block;
     object-fit: cover;
 }
+
 .edit__profile .info__avatar span{
     position: absolute;
     bottom: 0;
@@ -285,12 +286,19 @@ h6{
 .fullname{
     font-size: 1rem;
 }
+.btn .btn-outline-info{
+    position: relative !important;
+    top: 1rem !important;
+    
+    
+    
+}
 @media (max-width:550px){
     .follow_box{
         
         width: 100%;
         position: fixed;
-        top: 20rem;
+        top: 23rem;
         height: 107vh;
     }
     .profile{
@@ -366,14 +374,8 @@ h6{
 .info{
     height:auto;
 }
-.info__content .info__content__title> .btn-outline-info{
-    position: absolute;
-    left: 5rem;
-    
-}
-.info_container .follow_btn{
-    margin-top: 4rem;
-}
+
+
 @media (min-width:551px) and (max-width:780px){
     .profile {
         margin-top: 7.5rem;
