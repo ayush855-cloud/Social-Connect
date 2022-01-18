@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.status{
+    background: white;
+    box-shadow: rgba(0,0,0,0.19) 0px 10px 20px ,rgba(0,0,0,0.23) 0px 6px 6px;
+    padding: 20px;
+    border-radius: 10px;
+    height: 15vh;
+    border: 1px solid rgb(196, 187, 187);
+}
+.home{
+    overflow-x: hidden !important;
+}
+.status .statusBtn{
+    position: relative;
+    left: -1rem;
+    width: 100%;
+    height: 8vh;
+    background: #f1f1f1;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: #555;
+    padding: 0px 0px;
+    text-align: center;
+    border: 1px solid rgb(161, 157, 157);
+}
+.status_avatar{
+    position: relative;
+    left: -1.3rem;
+    top: -1.55rem !important;
+    width: 100px !important;
+    height: 100px !important;
+}
+.status .statusBtn:hover{
+    background: #ddd;
+}
+
+/* Posts */
+
+.posts .card{
+    border-radius: 20px;
+    box-shadow: rgba(0,0,0,0.19) 0px 10px 20px ,rgba(0,0,0,0.23) 0px 10px 20px; 
+    border: 1px solid rgb(196, 187, 187);
+    
+    
+}
+
+
+/* Post Card Header */
+.posts .card_header{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px 25px;
+    
+    font-weight: 500;
+    letter-spacing: 0.1px;
+
+}
+.card_header_username{
+    position: relative;
+    left: -1.3rem;
+}
+.MuiMenu-paper{
+    right: 20px !important;
+    max-width: 150px !important;
+}
+.MuiPopover-paper {
+    top: 182px;
+    left: 208px;
+}
+.post_avatar{
+    position: relative !important;
+    top: -1.19rem !important;
+    width: 70px !important;
+    height: 70px !important;
+    object-fit: cover;
+}
+
+.card_body-content{
+    padding: 0 25px;
+    margin-left: 1px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.card_body-content span{
+    text-align: justify;
+}
+.posts .card_body-content .readMore{
+    color: teal;
+    cursor: pointer;
+}
+
+.posts .card_icon_menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    cursor: pointer;
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.posts .card_icon_menu .material_icon{
+    width: 27px !important;
+    height: 27px !important;
+    transform: translate(5px,-6px);
+}
+.material_telegram{
+    width: 27px !important;
+    height: 27px !important;
+    transform: translate(-6px,-6px);
+}
+
+.fa-comment:before {
+    content: "\f075";
+    position: relative;
+    top: -0.2rem;
+    font-size: 1.4rem;
+}
+.icons_div{
+    display: flex;
+    width: 22%;
+    justify-content: space-between;
+}
+.profile_address{
+    font-size: 1rem;
+    font-family: 'Poppins';
+    font-weight: 550;
+}
+.user_website{
+    font-size: 1rem;
+    font-family: 'Poppins';
+    color: rgb(8, 94, 94);
+    font-weight: 500;
+}
+@media (max-width:760px){
+    .home{
+        position: relative;
+        top: 7rem;
+        left: 1rem;
+    }
+    
+   .single_post{
+       position: relative;
+       top: 7rem;
+       left: 0.3rem;
+       width: 100%;
+       margin: auto;
+       height: calc(114vh - 100px);
+       overflow-y: scroll;
+       overflow-x: hidden !important;
+   }
+   .single_post .card > .MuiPaper-root > .MuiCollapse-root .MuiCollapse-wrapper .MuiCollapse-wrapperInner{
+       width: 100% !important;
+   }
+   .single_post .card > .MuiAccordion-root.mui-expanded{
+       margin: 12px -5px;
+   }
+    .status_avatar{
+        position: relative;
+        left: -1rem !important;
+    top: -1.3rem !important;
+    width: 84px !important;
+    height: 84px !important;
+    }
+    .status .statusBtn{
+        position: relative;
+        left: -1rem;
+        text-align: start;
+    padding: 0px 34px;
+    }
+    .card_body-content span {
+        
+        position: relative;
+        left: -0.4rem;
+        display: block;
+        
+    }
+
+    .icons_div{
+        width: 35%;
+    }
+    .bookmark{
+        position: relative !important;
+        top: -0.4rem !important;
+    }
+    .posts .card_header{
+        padding: 14px 21px;
+    }
+    .post_card_dots{
+        position: relative !important;
+        top: -1rem !important;
+        right: 0.4rem !important;
+    }
+    .card:nth-child(3){
+        margin-bottom: 5rem !important;
+    }
+    .end_gap:nth-child(3) {
+        margin-bottom: 1.5rem !important;
+    }
+    .card:last-child{
+        margin-bottom: 7rem !important;
+    }
+    .status{
+        border: 1px solid rgb(196, 187, 187);
+    }
+    .card_header_username{
+        position: relative;
+        left: -1rem;
+    }
+    .load_button{
+        position: relative !important;
+    top: -4rem !important;
+    }
+}

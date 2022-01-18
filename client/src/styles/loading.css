@@ -1,0 +1,27 @@
+.loader__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255, .8);
+    z-index: 101;
+}
+.loader__container__item{
+    width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        border-top: .4rem dotted #3C8DAD;
+        border-left: .4rem dotted #3C8DAD ;
+        border-bottom: .4rem dotted #3C8DAD ;
+        border-right: .4rem solid transparent;
+        animation: loader .5s infinite; 
+}
+@keyframes loader {
+    100% {
+        transform: rotate(360deg);
+    }
+}
