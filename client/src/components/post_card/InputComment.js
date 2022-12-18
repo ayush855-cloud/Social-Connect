@@ -12,7 +12,7 @@ function InputComment({children,post,reply,setOnReply,theme}) {
     const handleSubmit=(e)=>{
         e.preventDefault();
         const newComment={
-            content,
+            content:content,
             likes:[],
             user:auth.user,
             createdAt:new Date().toISOString(),

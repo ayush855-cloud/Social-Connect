@@ -1,8 +1,5 @@
 import { SOCKET } from "../type/globalType";
 
-
-
-
 const socketReducer=(state=[],action)=>{
     switch(action.type){
         case SOCKET:

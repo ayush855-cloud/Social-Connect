@@ -14,16 +14,16 @@ function Profile() {
     const {id}=useParams();
     const [saveTab,setSaveTab]=useState(false);
     const dispatch=useDispatch();
+
     useEffect(()=>{
         if(profile.ids.every(item=>item!==id)){
             dispatch(getProfileUsers({ id, auth }));
-        }
-        
+        }   
     },[id,auth,profile.ids,dispatch])
+
     return (
         <div className="profile">
             <Info auth={auth}  profile={profile} dispatch={dispatch} id={id}/>
-
             {
                 auth.user._id===id && 
                 <div className={`profile_tab ${(modal || status) && "close_profile_tab"}`}>
@@ -32,7 +32,9 @@ function Profile() {
                 </div>
             }
             
-            {notify.loading? <Loading/> : <>
+            {
+                
+            notify.loading? <Loading/> : <>
             {
                 saveTab ? <Saved auth={auth} 
                     dispatch={dispatch} /> :
@@ -41,6 +43,7 @@ function Profile() {
             }
             </>
             }
+
         </div>
     )
 }

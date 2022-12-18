@@ -40,12 +40,13 @@ function CardHeader({ post }) {
     const handleCopyUrl=()=>{
       navigator.clipboard.writeText(`${BASE_URL}/post/${post._id}`);
     }
+    
     return (
         <div className="card_header position-relative">
             <div className="d-flex card_header_username">
                 <Avatar src={post.user.avatar} className="post_avatar" style={{filter: theme ? 'invert(1)' : 'invert(0)'}}/>
                 <div className="card_name">
-                    <h6 className="m-0">
+                    <h6 className="m-0" style={{fontFamily: 'Roboto',fontSize:'18px'}}>
                         <Link to={`/profile/${post.user._id}`} className="text-dark">{post.user.username}</Link>
                     </h6>
                     <span className="text-muted">

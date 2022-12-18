@@ -6,6 +6,7 @@ import '../styles/auth.css';
 import '../styles/header.css';
 
 function Login() {
+
     const history=useHistory();
     const dispatch=useDispatch();
     const {auth}=useSelector((state)=>state);
@@ -22,14 +23,20 @@ function Login() {
     }
 
     const handleSubmit=(e)=>{
+
         e.preventDefault();
+
         dispatch(login(userData));
+        
     }
+
+
     useEffect(()=>{
         if(auth.token){
             history.push("/");
         }
     },[auth.token,history])
+
     return (
         <div className="auth_page">
             <form onSubmit={handleSubmit}>
@@ -37,7 +44,6 @@ function Login() {
                 <div className="form-group">
                     <label htmlFor="exampleInputEmail1">Email address</label>
                     <input type="email" className="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" value={userData.email} onChange={handleChangeInput} />
-
                 </div>
                 <div className="form-group">
                     <label htmlFor="exampleInputPassword1">Password</label>
@@ -51,8 +57,6 @@ function Login() {
                 <button type="submit" className="btn btn-dark w-100" disabled={userData.email && userData.password ? false : true}>Login</button>
                 <p className="my-2">You don't have an account</p>
                 <div className="register"><Link to="/register" className="register__button"> Register Now</Link></div>
-
-                
             </form>
         </div>
     )

@@ -32,7 +32,7 @@ function MsgDisplay({ user, msg, theme, data }) {
                    
                 }
 
-                <div>
+                <div >
                     {
                         msg.text && <div className="chat_text" style={{
                         filter: theme ? 'invert(1)' : 'invert(0)'

@@ -1,20 +1,22 @@
 .auth_page{
     width: 100%;
     margin: auto;
-    min-height: 100vh;
-    background: #fdfdfd;
+    /* min-height: 100vh; */
+    /* background: #fdfdfd; */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .auth_register_page{
     width: 100%;
-    margin: auto;
+    /* margin: auto; */
     min-height: 100vh;
     background: #fdfdfd;
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    /* margin-top: 150px; */
 }
 .auth_register_page form{
     box-shadow: rgba(0,0,0,0.19) 0px 10px 20px ,rgba(0,0,0,0.23) 0px 6px 6px;
@@ -23,6 +25,8 @@
     width: 100%;
     border: 1px solid #ddd;
     padding: 50px 25px;
+    
+    /* margin-top: 50px; */
 }
 .auth_page form{
     box-shadow: rgba(0,0,0,0.19) 0px 10px 20px ,rgba(0,0,0,0.23) 0px 6px 6px;
@@ -31,6 +35,8 @@
     width: 100%;
     border: 1px solid #ddd;
     padding: 50px 25px;
+    position: relative;
+    top: 100px;
 }
 .register{
     width: 100%;

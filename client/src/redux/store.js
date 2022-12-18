@@ -10,7 +10,7 @@ const store = createStore(
     combineReducer,
     composeWithDevTools(applyMiddleware(thunk))
 )
-
+ 
 const DataProvider = ({children}) => {
     return(
         <Provider store={store}>

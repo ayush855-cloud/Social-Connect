@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { useHistory, Link } from 'react-router-dom'
+
 import { register } from '../redux/actions/authActions'
+import { TYPE } from '../redux/actions/notifyActions';
 import '../styles/header.css';
 
 const Register = () => {
@@ -12,6 +14,7 @@ const Register = () => {
     const initialState = { 
         fullname: '', username: '', email: '', password: '', cf_password: '', gender: 'male'
     }
+
     const [userData, setUserData] = useState(initialState)
     const { fullname, username, email, password, cf_password } = userData
 
@@ -27,11 +30,14 @@ const Register = () => {
         const { name, value } = e.target
         setUserData({...userData, [name]:value})
     }
+   
 
     const handleSubmit = e => {
         e.preventDefault()
         dispatch(register(userData))
     }
+
+
 
     return (
         <div className="auth_register_page pt-5">

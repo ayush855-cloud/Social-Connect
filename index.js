@@ -1,3 +1,4 @@
+
 require("dotenv").config();
 const express=require("express");
 const mongoose=require("mongoose");
@@ -7,9 +8,11 @@ const app=express();
 const SocketServer=require('./socketServer');
 const { ExpressPeerServer } =require('peer');
 
+
 app.use(express.json());
 app.use(cors());
 app.use(cookieParser());
+
 
 // Socket
 const http=require('http').createServer(app);
@@ -29,6 +32,7 @@ app.use("/api",require("./routes/commentRouter"));
 app.use("/api",require("./routes/notifyRouter"));
 app.use("/api",require("./routes/messageRouter"));
 
+
 const DB=process.env.DB;
 mongoose.connect(DB,{ 
     useNewUrlParser:true,
@@ -45,7 +49,7 @@ app.get("/",(req,res)=>{
     res.json({msg:"Hello"});
 })
 
-const PORT=process.env.PORT|| 5000;
+const PORT=process.env.PORT;
 http.listen(PORT,()=>{
     console.log(`Listening to the ${PORT}`);
 })

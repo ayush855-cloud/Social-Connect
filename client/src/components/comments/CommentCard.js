@@ -25,7 +25,7 @@ function CommentCard({children,comment,post,commentId}) {
         
         setContent(comment.content);
         setIsLike(false);
-        setOnReply(false);
+        // setOnReply(false);
         if(comment.likes.find(like=>like._id===auth.user._id)){
             setIsLike(true)
         }
@@ -60,11 +60,9 @@ function CommentCard({children,comment,post,commentId}) {
     const handleReply=()=>{
         if(reply) return setOnReply(false);
         setOnReply({...comment,commentId});
+        console.log(reply);
     }
     return (
-        
-
-        
         <div className={`comment_card mt-2 ${onEdit && "setWidth"}`}>
         <Link to={`/profile/${comment.user._id}`} className="d-flex align-items-center text-dark">
             <Avatar src={comment.user.avatar} style={{filter:theme?'invert(1)':"invert(0)"}}/>
@@ -128,6 +126,7 @@ function CommentCard({children,comment,post,commentId}) {
        
 
        {
+           
            reply && <InputComment post={post}
            reply={reply}
            setOnReply={setOnReply}>

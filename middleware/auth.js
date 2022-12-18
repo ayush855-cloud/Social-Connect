@@ -21,6 +21,7 @@ const auth=async(req,res,next)=>{
             const user=await Users.findOne({_id:decoded.id});
             req.user=user;
             req.token=token;
+            // console.log(req.token);
             next();
         
     } catch (error) {

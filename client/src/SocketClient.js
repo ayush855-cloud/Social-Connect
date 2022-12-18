@@ -7,6 +7,7 @@ import audiobell from './audio/client_src_audio_got-it-done-613.mp3';
 import { ADD_MESSAGE, ADD_USER } from './redux/actions/messageAction';
 import { CALL, OFFLINE, ONLINE } from './redux/type/globalType';
 
+
 const spawnNotification=(body,icon,url,title)=>{
     let options={
         body,icon
@@ -84,6 +85,8 @@ useEffect(()=>{
 },[dispatch,socket,auth]) 
 
 // Notifications
+
+
 useEffect(()=>{
     socket.on('createNotifyToClient',msg=>{
         dispatch({type:TYPE.CREATE_NOTIFY,payload:msg})

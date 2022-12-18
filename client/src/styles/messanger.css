@@ -136,6 +136,7 @@
     margin-bottom: 10px;
 }
 .my_message{
+    /* overflow-x: hidden; */
     justify-content: end;
     justify-items: end;
     text-align: justify;  
@@ -249,7 +250,14 @@
     transform: translate3d(-110px,-200px,0px) !important;
 }
 .set_images{
-    width: 50% !important;
+   
+    width: 61% !important;
+    position: relative;
+    left: 40%;
+}
+.exit_icon{
+    color: white !important;
+    font-size: 2.25rem !important;
 }
 @media (max-width:768px){
     .message{
@@ -259,6 +267,8 @@
     }
     .set_images{
         width: 100% !important;
+        position: relative;
+    left: 0%;
     }
     .right_mess,
     .left_mess{

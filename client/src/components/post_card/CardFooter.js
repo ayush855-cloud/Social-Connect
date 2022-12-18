@@ -48,6 +48,7 @@ function CardFooter({post}) {
         setSaveLoad(false);
         
     }
+    
     useEffect(() => {
         if(post.likes?.find(like=>like._id===auth.user._id)){
             setIsLike(true)

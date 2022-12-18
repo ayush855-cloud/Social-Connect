@@ -84,18 +84,18 @@ const authController={
         logout:async(req,res)=>{
             try {
             res.clearCookie('refreshtoken', {path: '/api/refresh_token'});
-            return res.json({msg: "Logged out!"});
+            return res.status(200).json({msg: "Logged out!"});
             } catch (error) {
               return res.status(500).json({msg: error.message});
             }
         },
         generateAccessToken:async(req,res)=>{
             try {
-                const rf_token = req.cookies.refreshtoken
+                const rf_token = req.cookies.refreshtoken;
             if(!rf_token) return res.status(403).json({msg: "Please login now."})
 
             jwt.verify(rf_token, process.env.REFRESH_SECRET_KEY, async(err, result) => {
-               1
+               
                 if(err) return res.status(402).json({msg: "Please login now."})
 
                 const user = await Users.findById(result.id).select("-password")
@@ -107,7 +107,10 @@ const authController={
 
                 res.json({
                     access_token,
-                    user
+                    user:{
+                        ...user._doc,
+                        password:''
+                    }
                 })
             })
             } catch (error) {

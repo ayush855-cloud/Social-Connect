@@ -10,7 +10,7 @@ const userController = {
                 .limit(10).select("fullname username avatar")
             const token=req.token;
                 
-            res.json({ users,token});
+            res.status(200).json({ users,token});
         } catch (error) {
             return res.status(500).json({ msg: error.message });
         }

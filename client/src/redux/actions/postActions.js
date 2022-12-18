@@ -44,6 +44,7 @@ export const createPost=({content,images,auth,socket})=>{
 }
 
 
+
 export const getPosts=(token)=>{
     return async(dispatch)=>{
         dispatch({type:POST_TYPES.LOADING_POSTS,payload:true});
@@ -66,6 +67,8 @@ export const updatePost=({content,images,auth,status})=>{
 
         imgNewUrl=images.filter(img=>!img.url);
         imgOldUrl=images.filter(img=>img.url);
+        console.log(imgNewUrl);
+        console.log(imgOldUrl)
         if(status.content===content && imgNewUrl.length===0 && imgOldUrl.length===status.images.length)
         return;
         try {

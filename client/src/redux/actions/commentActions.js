@@ -7,8 +7,8 @@ import { POST_TYPES } from "./postActions";
 
 export const createComment=({post,newComment,auth,socket})=>{
     return async(dispatch)=>{
-        const newPost={...post,comments:[...post.comments,newComment]};
-        dispatch({type:POST_TYPES.UPDATE_POST,payload:newPost});
+        // const newPost={...post,comments:[...post.comments,newComment]};
+        // dispatch({type:POST_TYPES.UPDATE_POST,payload:newPost});
         try {
             const data={...newComment,postId:post._id,postUserId:post.user._id}
             const res=await postDataAPI('comment',data,auth.token);

@@ -13,7 +13,7 @@ function CommentDisplay({comment,post,replyComments}) {
             <div className="pl-4">
                 {
                     showReply.map((item,index)=>(
-                        item.reply && 
+                        
                         <CommentCard key={index}
                             comment={item}
                             post={post}

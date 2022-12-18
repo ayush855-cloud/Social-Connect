@@ -7,8 +7,9 @@ const commentController={
            const {postId,content,tag,reply,postUserId}=req.body;
            const post=await Posts.findById(postId);
 
-           if(!post) return res.status(400).json({msg:"This post does not exist"});
+           if(!post) return res.status(400).json({msg:"This post does not exist"});  
 
+           
            if(reply){
                const cm=await Comments.findById(reply);
                if(!cm) return res.status(400).json({msg:"This comment does not exist"});
@@ -89,3 +90,4 @@ deleteComment:async(req,res)=>{
 }
 
 module.exports=commentController
+

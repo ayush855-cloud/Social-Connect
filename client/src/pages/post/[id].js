@@ -18,6 +18,7 @@ function Post() {
             setPost(newArr)
         }
     },[detailPost,dispatch,id,auth])
+    
     return (
         <div className="posts">
             {

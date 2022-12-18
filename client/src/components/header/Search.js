@@ -53,8 +53,7 @@ function Search() {
             <div className="users">
                 {
                     search && users.map(user => (
-                        <Link key={user._id} to={`/profile/${user._id}`} style={{ textDecoration: 'none', width: '100%' }}
-                            onClick={handleBoxClose}>
+                        <Link key={user._id} to={`/profile/${user._id}`} style={{ textDecoration: 'none', width: '100%' }} onClick={handleBoxClose}>
                             <SearchCard key={user._id} user={user} handleBoxClose={handleBoxClose} />
                         </Link>
                     ))

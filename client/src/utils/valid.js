@@ -1,5 +1,6 @@
 const valid = ({fullname, username, email, password, cf_password}) => {
-    const err = {}
+    
+    const err = {};
 
     if(!fullname) {
         err.fullname = "Please add your full name."
